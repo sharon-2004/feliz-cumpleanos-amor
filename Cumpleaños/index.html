@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>❤️ Feliz Cumpleaños Mi Amor ❤️</title>
+
+    <meta name="description"
+          content="Un regalo hecho con mucho amor.">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Dancing+Script:wght@700&display=swap"
+          rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<!--==========================
+FONDOS
+===========================-->
+
+<div id="stars"></div>
+
+<div id="hearts"></div>
+
+<div id="petals"></div>
+
+<canvas id="confetti"></canvas>
+
+<!--==========================
+MÚSICA
+===========================-->
+
+<audio id="music" loop>
+
+    <source src="music/cancion.mp3" type="audio/mpeg">
+
+</audio>
+
+<!--==========================
+PANTALLA DE BIENVENIDA
+===========================-->
+
+<section id="intro">
+
+    <div class="intro-content">
+
+        <h3>❤️ Para el amor de mi vida ❤️</h3>
+
+        <h1 id="introTitle">
+            Tengo una sorpresa para ti...
+        </h1>
+
+        <p>
+
+            Hoy quiero regalarte algo diferente.
+
+            Una pequeña página hecha con muchísimo amor para recordarte lo importante que eres para mí.
+
+        </p>
+
+        <button id="enterBtn">
+
+            Comenzar
+
+            <i class="fa-solid fa-heart"></i>
+
+        </button>
+
+    </div>
+
+</section>
+
+<!--==========================
+PORTADA
+===========================-->
+
+<section id="hero">
+
+    <div class="hero-left">
+
+        <h2>
+
+            🎂 Feliz Cumpleaños 🎂
+
+        </h2>
+
+        <h1 id="boyfriendName">
+
+            Mi Amor ❤️
+
+        </h1>
+
+        <p>
+
+            Hoy celebramos el día en que nació la persona que hace mi vida muchísimo más feliz.
+
+            Gracias por existir.
+
+        </p>
+
+        <button id="scrollLetter">
+
+            Leer mi carta
+
+        </button>
+
+    </div>
+
+    <div class="hero-right">
+
+        <img src="img/portada.jpeg"
+             alt="Nosotros">
+
+    </div>
+
+</section>
+
+<!--==========================
+SOBRE
+===========================-->
+
+<section id="envelopeSection">
+
+    <h2>
+
+        💌 Tengo una carta para ti
+
+    </h2>
+
+    <p>
+
+        Haz clic sobre el sobre.
+
+    </p>
+
+    <div id="envelope">
+
+        <div class="cover"></div>
+
+        <div class="letter">
+
+            <h3>
+
+                Para ti ❤️
+
+            </h3>
+
+            <p>
+
+                Ábreme
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--==========================
+CARTA
+===========================-->
+
+<section id="letterSection">
+
+    <div class="paper">
+
+        <h2>
+
+            Mi querido amor ❤️
+
+        </h2>
+
+        <p id="letterText">
+
+            Mi amor...
+
+Hoy es un día muy especial porque celebramos el cumpleaños de la persona que más feliz hace mi corazón.
+
+Quiero darte las gracias por cada momento que hemos compartido, por cada abrazo, por cada risa y hasta por esas pequeñas aventuras que siempre terminan convirtiéndose en nuestros mejores recuerdos.
+
+Desde que llegaste a mi vida todo ha sido mucho más bonito. Me haces sentir querida, segura y feliz. Eres esa persona con la que quiero seguir compartiendo sueños, viajes, metas y muchísimos cumpleaños más.
+
+Espero que hoy disfrutes muchísimo, que todos tus deseos se hagan realidad y que nunca olvides lo increíble que eres.
+
+Siempre voy a estar orgullosa de ti y de todo lo que logres.
+
+Gracias por existir.
+
+Gracias por elegirme.
+
+Y gracias por hacerme tan feliz.
+
+❤️ Feliz cumpleaños, mi amor. ❤️
+
+        </p>
+
+    </div>
+
+</section>
+
+<!--==========================
+CONTADOR
+===========================-->
+
+<section id="counterSection">
+
+    <h2>
+
+        ⏳ Nuestro tiempo juntos
+
+    </h2>
+
+    <p>
+
+        Cada segundo contigo ha valido completamente la pena.
+
+    </p>
+
+    <div class="counter">
+
+        <div class="counter-card">
+
+            <span id="years">0</span>
+
+            <small>Años</small>
+
+        </div>
+
+        <div class="counter-card">
+
+            <span id="months">0</span>
+
+            <small>Meses</small>
+
+        </div>
+
+        <div class="counter-card">
+
+            <span id="days">0</span>
+
+            <small>Días</small>
+
+        </div>
+
+        <div class="counter-card">
+
+            <span id="hours">0</span>
+
+            <small>Horas</small>
+
+        </div>
+
+        <div class="counter-card">
+
+            <span id="minutes">0</span>
+
+            <small>Minutos</small>
+
+        </div>
+
+        <div class="counter-card">
+
+            <span id="seconds">0</span>
+
+            <small>Segundos</small>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--==========================
+NUESTRA HISTORIA
+===========================-->
+
+<section id="timeline">
+
+    <h2>
+
+        ❤️ Nuestra Historia ❤️
+
+    </h2>
+
+    <div class="timeline">
+
+        <div class="timeline-item">
+
+            <div class="timeline-dot"></div>
+
+            <div class="timeline-content">
+
+                <h3>
+
+                    🌸 Cómo nos conocimos
+
+                </h3>
+
+                <p>
+
+                    Todo comenzó aquel día en las bancas de la universidad. Decidí acercarme a hablarte sin imaginar que ese pequeño momento cambiaría por completo mi vida.
+
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="timeline-item">
+
+            <div class="timeline-dot"></div>
+
+            <div class="timeline-content">
+
+                <h3>
+
+                    🏍 Nuestra primera cita
+
+                </h3>
+
+                <p>
+
+                    Pasaste por mí en tu moto y, por los nervios, hasta terminé tirándola al intentar subirme. Al final fue una noche llena de risas, pláticas y unas alitas deliciosas.
+
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="timeline-item">
+
+            <div class="timeline-dot"></div>
+
+            <div class="timeline-content">
+
+                <h3>
+
+                    🏞 Nuestro primer viaje
+
+                </h3>
+
+                <p>
+
+                    Diria que nuestro primer viaje fue a Guanajuato porque fue nuestro viaje mas largo y una aventura increíble. Caminamos por el centro, conocimos lugares nuevos y compartimos uno de los días más bonitos de nuestra historia.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--==========================
+LIBRO DE RECUERDOS
+===========================-->
+
+<section id="memoryBook">
+
+    <h2>
+
+        📖 Nuestro Libro de Recuerdos
+
+    </h2>
+
+    <p class="section-description">
+
+        Cada fotografía guarda un momento que siempre recordaré.
+
+    </p>
+
+    <div class="book">
+
+        <div class="book-page">
+
+            <img src="img/foto1.jpeg" alt="Foto 1">
+
+            <h3>
+
+                La primera vez que te subiste a los toboganes ❤️
+
+            </h3>
+
+            <p>
+
+                Fue un lindo dia, especial y divertido, siempre es divertido si estas tu.
+
+            </p>
+
+        </div>
+
+        <div class="book-page">
+
+            <img src="img/foto2.jpeg" alt="Foto 2">
+
+            <h3>
+
+                Nuestro baile juntos ✨
+
+            </h3>
+
+            <p>
+
+                Un recuerdo que siempre me hace sonreír cuando lo veo, porque se lo que te esforzaste para sacarme a bailar.
+
+            </p>
+
+        </div>
+
+        <div class="book-page">
+
+            <img src="img/foto3.jpeg" alt="Foto 3">
+
+            <h3>
+
+                Otro día inolvidable 📸
+
+            </h3>
+
+            <p>
+
+                Gracias por crear conmigo tantos recuerdos hermosos y siempre acompañarme a todo lo que te digo.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--==========================
+GALERÍA
+===========================-->
+
+<section id="gallery">
+
+    <h2>
+
+        📸 Nuestros Momentos Favoritos
+
+    </h2>
+
+    <div class="gallery">
+
+                <img src="img/foto1.jpeg" alt="Foto 1">
+        <img src="img/foto2.jpeg" alt="Foto 2">
+        <img src="img/foto3.jpeg" alt="Foto 3">
+        <img src="img/foto4.jpeg" alt="Foto 4">
+        <img src="img/foto5.jpeg" alt="Foto 5">
+        <img src="img/foto6.jpeg" alt="Foto 6">
+        <img src="img/foto7.jpeg" alt="Foto 7">
+        <img src="img/foto8.jpeg" alt="Foto 8">
+
+    </div>
+
+</section>
+
+<!--==========================
+RAZONES
+===========================-->
+
+<section id="reasons">
+
+    <h2>
+
+        ❤️ Algunas razones por las que te amo ❤️
+
+    </h2>
+
+    <div class="reason-grid">
+
+        <div class="reason-card">
+
+            <i class="fa-solid fa-heart"></i>
+
+            <h3>Tu hermosa sonrisa</h3>
+
+            <p>
+                Porque ilumina incluso mis días más difíciles.
+            </p>
+
+        </div>
+
+        <div class="reason-card">
+
+            <i class="fa-solid fa-heart"></i>
+
+            <h3>Tus abrazos</h3>
+
+            <p>
+                Porque ahí siempre encuentro paz.
+            </p>
+
+        </div>
+
+        <div class="reason-card">
+
+            <i class="fa-solid fa-heart"></i>
+
+            <h3>Tus ocurrencias</h3>
+
+            <p>
+                Nunca dejas de hacerme reír.
+            </p>
+
+        </div>
+
+        <div class="reason-card">
+
+            <i class="fa-solid fa-heart"></i>
+
+            <h3>Tu apoyo</h3>
+
+            <p>
+                Siempre estás cuando más te necesito.
+            </p>
+
+        </div>
+
+        <div class="reason-card">
+
+            <i class="fa-solid fa-heart"></i>
+
+            <h3>Nuestros sueños</h3>
+
+            <p>
+                Porque quiero cumplirlos todos contigo.
+            </p>
+
+        </div>
+
+        <div class="reason-card">
+
+            <i class="fa-solid fa-heart"></i>
+
+            <h3>Porque eres tú ❤️</h3>
+
+            <p>
+                No necesito otra razón.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--==========================
+PASTEL
+===========================-->
+
+<section id="cakeSection">
+
+    <h2>
+
+        🎂 Pide un deseo 🎂
+
+    </h2>
+
+    <p>
+
+        Haz clic sobre las velitas.
+
+    </p>
+
+    <div class="cake">
+
+        <div class="candle">
+            <div class="flame"></div>
+        </div>
+
+        <div class="candle">
+            <div class="flame"></div>
+        </div>
+
+        <div class="candle">
+            <div class="flame"></div>
+        </div>
+
+        <div class="cake-body"></div>
+
+    </div>
+
+</section>
+
+<!--==========================
+MÚSICA
+===========================-->
+
+<section id="musicPlayer">
+
+    <h2>
+
+        🎵 Nuestra canción 🎵
+
+    </h2>
+
+    <p>
+
+        Porque toda historia de amor tiene una banda sonora.
+
+    </p>
+
+    <button id="musicBtn">
+
+        <i class="fa-solid fa-play"></i>
+
+        Reproducir Música
+
+    </button>
+
+</section>
+
+<!--==========================
+MENSAJE FINAL
+===========================-->
+
+<section id="loveMessage">
+
+    <div class="message-box">
+
+        <h2>
+
+            ❤️ Gracias por existir ❤️
+
+        </h2>
+
+        <p>
+
+            Gracias por hacerme tan feliz.
+
+            Gracias por cada sonrisa.
+
+            Gracias por cada abrazo.
+
+            Gracias por acompañarme.
+
+            Espero seguir escribiendo esta historia contigo durante muchísimos años más.
+
+        </p>
+
+    </div>
+
+</section>
+
+<!--==========================
+SORPRESA
+===========================-->
+
+<section id="surprise">
+
+    <h2>
+
+        🎁 Tengo una última sorpresa...
+
+    </h2>
+
+    <p>
+
+        Haz clic para descubrirla.
+
+    </p>
+
+    <button id="surpriseBtn">
+
+        Abrir regalo ❤️
+
+    </button>
+
+</section>
+
+<!--==========================
+FINAL
+===========================-->
+
+<section id="final">
+
+    <div class="final-content">
+
+        <h1>
+
+            ❤️ Feliz Cumpleaños ❤️
+
+        </h1>
+
+        <h2 id="finalName">
+
+            Mi Amor
+
+        </h2>
+
+        <p>
+
+            Espero que esta pequeña sorpresa te haya gustado tanto como a mí hacerla.
+
+            Te amo muchísimo y deseo compartir muchísimos cumpleaños más contigo.
+
+        </p>
+
+        <h3>
+
+            Siempre juntos ❤️
+
+        </h3>
+
+    </div>
+
+</section>
+
+<!--==========================
+BOTÓN ARRIBA
+===========================-->
+
+<button id="topBtn">
+
+    <i class="fa-solid fa-arrow-up"></i>
+
+</button>
+
+<!--==========================
+LIGHTBOX
+===========================-->
+
+<div id="lightbox">
+
+    <span id="closeLightbox">
+
+        &times;
+
+    </span>
+
+    <img
+        id="lightboxImg"
+        src=""
+        alt="Imagen ampliada">
+
+</div>
+
+<!--==========================
+SCRIPTS
+===========================-->
+
+<script src="confetti.js"></script>
+<script src="script.js"></script>
+
+</body>
+
+</html>
